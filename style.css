@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-back a {
+    color: #fdd121;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.nav-menu-back a:hover {
+    opacity: 0.3;
+}
+
+.nav-menu-back{
+    display: flex;
+    justify-content: space-between;
+    background: #6b6b6b;
+    padding: 16px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-list li {
+    margin-left: 32px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
