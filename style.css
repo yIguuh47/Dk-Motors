@@ -1,8 +1,18 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior:smooth;
 }
 
+body{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/*---------------------------Top Bar--------------------------*/
 .nav-menu-back a {
     color: #fdd121;
     text-decoration: none;
@@ -16,9 +26,10 @@
 .nav-menu-back{
     display: flex;
     justify-content: space-between;
-    background: #6b6b6b;
-    padding: 16px;
+    background: #757575;
     width: 100%;
+    /*width: calc(100% - 32px);
+    width: 0 auto;*/
     font-size: 16px;
     font-weight: bold;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
@@ -27,12 +38,108 @@
 }
 
 .nav-list{
+    margin: 12px;
     display: flex;
     align-items: center;
     list-style: none;
 }
+
+.logo{
+    margin: 12px;
+    display: flex;
+    font-size: 26px;
+    align-items: center;
+}
+
 .nav-list li {
     margin-left: 32px;
     margin-bottom: auto;
     margin-top: auto;
 }
+
+/*---------------------Main--------------------*/
+.Top-Background{
+    width: 100%;
+    height: 85vh;
+    padding: 0;
+    margin: 0;
+}
+
+.about{
+    background-color: #393E46;
+    color: white;
+    width: calc(100% - 128px);
+    height: auto;
+    padding: 64px;
+    display: inline-flex;
+}
+
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 400px;
+    width: 540px;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+    transform: translateX(0);
+}
+
+#img{
+    object-fit: cover;
+    height: auto;
+    width: auto;
+}
+
+/*----TextoAbout----*/
+
+.txtAbout{
+    padding: 32px;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.txtAbout h1{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    color: #EEEEEE;
+
+}
+
+/*----TextoAbout----*/
+
+.date{
+    background: linear-gradient(#999999, #6d6c6b);
+    color: white;
+    width: calc(100% - 128px);
+    height: auto;
+    padding: 64px;
+    display: inline-flexbox;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.date h1{
+    font-size:22px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    color: #EEEEEE;
+}
+
+.end{
+    height: auto;
+    width: auto;
+    background:#3d3d3d;
+    color: white;
+    display: flex;
+    padding: 12px;
+    text-align: center;
+}
+
